@@ -16,8 +16,8 @@ class clockController extends Controller
         // $a = Carbon::createFromFormat('Y-m-d H:i:s', $persons)->format('H:i:s');
         // date("H:i","1359780799")
         $time = ($persons[0]->created_at->format('H:i'));
-        $mytime = Carbon::now();
-        dd($mytime);
+        
+        // dd(date("H:i",time));
         // $a = new DateTime();
         // dd($a->format('H:i:s'));
         return view('viewClock', compact('time'));
