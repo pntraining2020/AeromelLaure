@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('clock');
 });
+
+// Route::get('/','clockController@getTime');
+Route::get('/clockin','clockController@clockIn')->name('clockIn');
